@@ -19,7 +19,7 @@ jobs:
       run: |
         docker run --rm \
             --env LICENSE_KEY=H8LW-V566-APNJ-TFOR \
-            --env PY_VERSION=3.10.4
+            --env PY_VERSION=3.10.4 \
             --mount type=bind,source=${{ github.workspace }},target=/workspace/source \
             --mount type=bind,source=${{ github.workspace }}/result,target=/workspace/result \
             openrefactory/icr-python-engine:4.2.0
