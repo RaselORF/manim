@@ -1,0 +1,11 @@
+--- /workspace/source/manimlib/scene/scene.py
++++ /workspace/source/manimlib/scene/scene.py
+@@ -770,6 +770,8 @@
+         if shell is None or self.window is None:
+             # OpenRefactory Warning: Raising 'Exception' and 'BaseException' directly will have a negative impact on any code trying to catch these exceptions.
+             # Raise a more specific built-in exception or, create a custom one.
++            # OpenRefactory Warning: Raising 'Exception' and 'BaseException' directly will have a negative impact on any code trying to catch these exceptions.
++            # Raise a more specific built-in exception or, create a custom one.
+             raise Exception(
+                 "Scene.checkpoint_paste cannot be called outside of " +
+                 "an ipython shell"
