@@ -23,6 +23,8 @@ def color_to_rgb(color: ManimColor) -> Vect3:
     elif isinstance(color, Color):
         return np.array(color.get_rgb())
     else:
+        # OpenRefactory Warning: Raising 'Exception' and 'BaseException' directly will have a negative impact on any code trying to catch these exceptions.
+        # Raise a more specific built-in exception or, create a custom one.
         raise Exception("Invalid color type")
 
 
